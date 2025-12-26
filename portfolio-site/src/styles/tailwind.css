@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom layer */
+@layer base {
+  ::selection { background: theme('colors.accent.DEFAULT'); color: white; }
+  html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+  * { transition: background-color 0.3s ease, color 0.3s ease; }
+}
+
+@layer components {
+  .glass {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  body:not(.dark) .glass {
+    background: rgba(255,255,255,0.6);
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .card-hover { transition: transform .3s ease, box-shadow .3s ease; }
+  .card-hover:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+}
