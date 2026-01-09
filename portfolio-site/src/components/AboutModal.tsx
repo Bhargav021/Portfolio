@@ -245,7 +245,7 @@ const AboutModal: React.FC<Props> = ({ isOpen, onClose }) => {
                     </div>
                     <div>
                       <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Role</h3>
-                      <p className="text-white text-lg">ML Engineer & Researcher</p>
+                      <p className="text-white text-lg">Data Scientist & Researcher</p>
                     </div>
                     <div>
                       <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Location</h3>
@@ -253,7 +253,7 @@ const AboutModal: React.FC<Props> = ({ isOpen, onClose }) => {
                     </div>
                     <div>
                       <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Email</h3>
-                      <p className="text-emerald-400 text-lg">limbasia@usc.edu</p>
+                      <p className="text-emerald-400 text-lg">blimbasi@usc.edu</p>
                     </div>
                   </div>
                 </motion.div>
