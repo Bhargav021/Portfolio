@@ -23,6 +23,7 @@ const MiniProjects: React.FC<Props> = ({ projects }: Props) => {
       {projects.map((p: MiniProject, i: number) => (
         <motion.div
           key={p.name}
+          data-cursor="project"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}

@@ -260,9 +260,11 @@ export const skills = {
 
 export const contact = {
   location: 'Los Angeles, California',
-  phone: '602-578-4408',
+  phone: '+1 602-578-4408',
   email: 'blimbasi@usc.edu',
-  linkedin: 'https://www.linkedin.com/in/bhargavlimbasia',
-  handshake: 'https://usc.joinhandshake.com/',
-  github: 'https://github.com/bhargavlimbasia'
+  linkedin: 'https://www.linkedin.com/in/bhargavlimbasia/',
+  handshake: 'https://app.joinhandshake.com/profiles/limbasiabhargav',
+  github: 'https://github.com/Bhargav021',
+  githubAlt: 'https://github.com/TheDeal9',
+  twitter: 'https://x.com/BLimbasia'
 };

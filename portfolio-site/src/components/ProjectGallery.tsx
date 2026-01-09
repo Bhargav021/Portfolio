@@ -34,8 +34,16 @@ const ProjectCard: React.FC<{ project: ProjectItem; index: number }> = ({ projec
     setIsHovered(false);
   };
 
+  const handleClick = () => {
+    if (p.github) {
+      window.open(p.github, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <motion.div
+      data-cursor="project"
+      onClick={handleClick}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
@@ -52,7 +60,7 @@ const ProjectCard: React.FC<{ project: ProjectItem; index: number }> = ({ projec
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
-      className="group relative bg-slate-900/95 backdrop-blur-xl p-6 md:p-8 rounded-2xl transition-all border border-slate-700/50 hover:border-emerald-400/50 overflow-hidden"
+      className={`group relative bg-slate-900/95 backdrop-blur-xl p-6 md:p-8 rounded-2xl transition-all border border-slate-700/50 hover:border-emerald-400/50 overflow-hidden ${p.github ? 'cursor-pointer' : ''}`}
     >
       {/* Glow effect on hover only */}
       <motion.div
