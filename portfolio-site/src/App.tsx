@@ -99,13 +99,28 @@ export default function App() {
                 </span>
               </motion.h1>
               
+              {/* Current Title/Position */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="space-y-2"
+              >
+                {/* <p className="text-lg sm:text-xl md:text-2xl text-emerald-400 font-semibold drop-shadow-[0_2px_15px_rgba(0,0,0,0.8)]">
+                  AI/ML Engineer & Researcher
+                </p> */}
+                <p className="text-base sm:text-lg md:text-xl text-slate-200 font-light drop-shadow-[0_2px_15px_rgba(0,0,0,0.5)]">
+                  Graduate Student at USC • Aspiring AI / ML Engineer & Researcher
+                </p>
+              </motion.div>
+              
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-xl sm:text-2xl md:text-3xl text-white font-light drop-shadow-[0_2px_15px_rgba(0,0,0,0.8)]"
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="text-xl sm:text-2xl md:text-3xl text-white font-light italic drop-shadow-[0_2px_15px_rgba(0,0,0,0.8)] max-w-3xl mx-auto"
               >
-                I build ML systems that ship
+                "Building production-ready machine learning systems through research and projects."
               </motion.p>
             </div>
             
