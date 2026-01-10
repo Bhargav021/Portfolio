@@ -29,8 +29,10 @@ const AboutModal: React.FC<Props> = ({ isOpen, onClose }) => {
   const handleDownloadResume = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/Bhargav_Limbasia_Resume.pdf'; // You'll need to add your resume PDF to the public folder
+    link.href = '/Bhargav_Limbasia_Resume.pdf';
     link.download = 'Bhargav_Limbasia_Resume.pdf';
+    link.target = '_blank'; // Add target blank as fallback
+    link.rel = 'noopener noreferrer';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
